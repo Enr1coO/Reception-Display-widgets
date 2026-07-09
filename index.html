@@ -2,38 +2,25 @@
 <html lang="nl">
 <head>
 <meta charset="UTF-8">
-<title>Weer - Windy</title>
+<title>Wind en prognose - Windy</title>
 <style>
   html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background: #000;
   }
-  .widget-wrapper {
-    text-align: center;
-  }
-  .widget-wrapper a {
+  iframe {
     display: block;
-    margin-top: 6px;
-    font-size: 11px;
-    color: #666;
-    text-decoration: none;
-  }
-  .widget-wrapper a:hover {
-    text-decoration: underline;
+    width: 100vw;
+    height: 100vw;
+    border: none;
   }
 </style>
 </head>
 <body>
-  <div class="widget-wrapper">
-    <iframe width="650" height="450" src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=51.969&lon=4.34&detailLat=52.003&detailLon=4.354&detail=true" frameborder="0"></iframe>
-  </div>
+  <iframe src="https://embed.windy.com/embed.html?type=map&location=coordinates&metricRain=mm&metricTemp=°C&metricWind=km/h&zoom=11&overlay=wind&product=ecmwf&level=surface&lat=51.962&lon=4.763&detailLat=52&detailLon=4.36&detail=true" frameborder="0"></iframe>
 </body>
 </html>
