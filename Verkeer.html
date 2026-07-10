@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traffic map</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+  }
+  .widget-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+  }
+  .weerplazaWidget {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    border: none !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+  }
+</style>
+</head>
+<body>
+  <div class="widget-container">
+    <iframe frameborder="0" scrolling="no" class="weerplazaWidget"
+      src="https://www.verkeerplaza.nl/widgets/embed/filekaart?&&&z=9&l=51.97219182433531,4.754333496093751">
+    </iframe>
+  </div>
+</body>
+</html>
